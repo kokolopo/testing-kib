@@ -7,18 +7,18 @@ app.use(express.json());
 // Route untuk set cookie
 app.get("/set-cookie", (req, res) => {
   // Mengatur cookie
-  res.cookie(
-    "WhatEver",
-    "90b861435aa7944225649fc98859833407abc857c5d131ffefdd48199bd116d46c3cd066",
-    {
-      //domain: "simasda.kotabogor.go.id", // Sesuaikan dengan domain Anda
-      path: "/", // Path di mana cookie berlaku
-      sameSite: "Lax", // Mencegah pengiriman cookie lintas situs (opsional)
-    }
-  );
+  // res.cookie(
+  //   "WhatEver",
+  //   "94a4372e1d7ecb71f0134fa24ce3b71a222563ecc96e4dc01c5a4a398f653c172b282bb0",
+  //   {
+  //     //domain: "simasda.kotabogor.go.id", // Sesuaikan dengan domain Anda
+  //     path: "/", // Path di mana cookie berlaku
+  //     sameSite: "Lax", // Mencegah pengiriman cookie lintas situs (opsional)
+  //   }
+  // );
   res.cookie(
     "auth_tkt",
-    "d0ba1a94113b756d42397750cee766840345154db2905dcb7ff43affd9ad000319a9accea787b094b14f1d653368bb62d7d4079e57dd4a9fb17f3b03c513ef7366bba189197!userid_type:int",
+    "d19f65c871f6954bd96201343f67746d313624d22356d3a13bc7f00446f29337383939c85d050c6ef7e6c354e9895915b019a069bd13e13f2581f0c7e2a33dbf66bbada3197!userid_type:int",
     {
       //domain: "simasda.kotabogor.go.id", // Sesuaikan dengan domain Anda
       path: "/", // Path di mana cookie berlaku
